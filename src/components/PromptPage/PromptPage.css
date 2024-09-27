@@ -1,0 +1,47 @@
+/* src/components/PromptPage/PromptPage.css */
+
+.prompt-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .prompt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .prompt-form input {
+    padding: 10px;
+    width: 300px;
+    margin: 10px 0;
+  }
+  
+  .prompt-form button {
+    padding: 10px 20px;
+    background-color: #212EA0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .solution-result {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .solution-result h3 {
+    margin-bottom: 10px;
+  }
+  
+  .solution-result p {
+    white-space: pre-line;
+  }
+  

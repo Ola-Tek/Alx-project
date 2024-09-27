@@ -1,0 +1,82 @@
+/* Container for bowl and user icon */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust size as necessary */
+    margin: 0 auto;
+  }
+  
+  /* Bowl image styles */
+  .bowl-image{
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Set maximum width as needed */
+    transition: transform 0.3s ease;
+  }
+  .image-container:hover{
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue color with transparency */
+    border-radius: 10px; /* Optional: rounded corners for the hover effect */
+    padding: 10px; /* Optional: padding around the image */
+  }
+  .image-container:hover .bowl-image{
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+  }
+  /* User icon styles */
+  .user-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px; /* Adjust size as necessary */
+    height: 60px; /* Adjust size as necessary */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .user-icon:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8;
+    background-color: rgba(33, 46, 160, 0.6); /* Add a background color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .image-container {
+      max-width: 100%;
+    }
+    .user-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }  
+  
+  .testimonials{
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+    background-image: url('../../assets/3dbrick.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image in the div */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    color: #fff; /* Adjust text color for contrast with the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    padding: 20px; /* Optional: Adds padding inside the div */
+  }
+   
+.next_btn, .back-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212EA0;
+}
+.back-btn{
+    right: auto;
+    left: 0;
+}
